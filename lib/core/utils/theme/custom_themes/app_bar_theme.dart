@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:vpn/core/common/styles/global_text_style.dart';
+import 'package:vpn/core/utils/constants/colors.dart';
 
 class App_BarTheme {
   App_BarTheme._();
@@ -9,7 +10,7 @@ class App_BarTheme {
     foregroundColor: Colors.transparent,
     surfaceTintColor: Colors.transparent,
     elevation: 3,
-    backgroundColor: Colors.blue[800],
+    backgroundColor:AppColors.primary,
     iconTheme: const IconThemeData(color: Colors.white),
     titleTextStyle: getTextStyle(
         color: Colors.white,

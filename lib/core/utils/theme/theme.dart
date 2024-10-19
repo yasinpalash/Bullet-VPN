@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vpn/core/utils/constants/colors.dart';
 
 import 'custom_themes/app_bar_theme.dart';
 import 'custom_themes/elevated_button_theme.dart';
@@ -13,7 +14,7 @@ class AppTheme {
       useMaterial3: true,
       // fontFamily: 'Poppins'
       brightness: Brightness.light,
-      primaryColor: Colors.blueAccent,
+      primaryColor: AppColors.primary,
       scaffoldBackgroundColor: Colors.white,
       textTheme: AppTextTheme.lightTextTheme,
       elevatedButtonTheme: AppElevatedButtonTheme.lightElevatedButtonTheme,
