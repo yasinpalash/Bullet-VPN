@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:vpn/core/utils/constants/app_preferences.dart';
 import 'package:vpn/routes/app_routes.dart';
 import 'core/bindings/controller_binder.dart';
 import 'core/utils/theme/theme.dart';
@@ -22,9 +23,10 @@ class MyApp extends StatelessWidget {
           initialRoute: AppRoute.getHomeScreen(),
           getPages: AppRoute.routes,
           initialBinding: ControllerBinder(),
-          themeMode: ThemeMode.system,
+          // themeMode:
+          //     AppPreferences.isModeDark ? ThemeMode.dark : ThemeMode.light,
           theme: AppTheme.lightTheme,
-          darkTheme: AppTheme.darkTheme,
+          // darkTheme: AppTheme.darkTheme,
         );
       },
     );

@@ -9,11 +9,11 @@ class App_BarTheme {
   static AppBarTheme lightAppBarTheme = AppBarTheme(
     foregroundColor: Colors.transparent,
     surfaceTintColor: Colors.transparent,
-    elevation: 3,
-    backgroundColor:AppColors.primary,
+    elevation: 4,
+    backgroundColor:AppColors.appBar,
     iconTheme: const IconThemeData(color: Colors.white),
     titleTextStyle: getTextStyle(
-        color: Colors.white,
+        color: AppColors.text,
         fontSize: 20,
         fontWeight: FontWeight.bold,
     ),
@@ -26,16 +26,17 @@ class App_BarTheme {
   static final AppBarTheme darkAppBarTheme = AppBarTheme(
     foregroundColor: Colors.transparent,
     surfaceTintColor: Colors.transparent,
-    elevation: 0,
-    backgroundColor: Colors.grey[850], // Darker background for dark theme
-    iconTheme: const IconThemeData(color: Colors.blueAccent), // Accent color for contrast
+    elevation: 2, // Slight elevation for some depth
+    backgroundColor: const Color(0xFF121212), // Darker black for better contrast in dark mode
+    iconTheme: const IconThemeData(color: Colors.white), // White icons for better contrast and consistency
     titleTextStyle: getTextStyle(
-      color: Colors.blueAccent,
+      color: Colors.white, // White text for better readability in dark mode
       fontSize: 20.0,
       fontWeight: FontWeight.bold,
     ),
-    actionsIconTheme: const IconThemeData(color: Colors.blueAccent),
+    actionsIconTheme: const IconThemeData(color: AppColors.accent), // Use accent color for a pop on action icons
     centerTitle: true,
-    systemOverlayStyle: SystemUiOverlayStyle.light, // Control status bar color and icons
+    systemOverlayStyle: SystemUiOverlayStyle.light, // Light icons for the system status bar
   );
+
 }

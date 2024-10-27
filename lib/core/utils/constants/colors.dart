@@ -4,16 +4,22 @@ class AppColors {
   AppColors._();
 
   // Brand Colors
-  static const Color primary = Color(0xFF1E3A5F); // Darker primary for a more professional look
-  static const Color secondary = Color(0xFFFEC601); // Bright yellow for highlights and accents
-  static const Color accent = Color(0xFF89A7FF); // Softer blue for a modern touch
-
+  static const Color primary = Color(0xFF121212); // Deep Black
+  static const Color secondary = Color(0xFF333333); // Dark Gray
+  static const Color accent = Color(0xFFBB86FC); // Purple (for a touch of uniqueness and vibrancy)
+  static const Color appBar = Color(0xFF1F1F1F); // Almost Black
+  static const Color scaffold = Color(0xFF181818); // Very Dark Gray (almost black but slightly lighter for depth)
+  static const Color text = Color(0xFFE0E0E0); // Light Gray (for good contrast and readability)
+  static const Color error = Color(0xFFCF6679);
+  static const Color bottomNavigationBar = Color(0xFF232323); // Slightly Lighter Gray for contrast
+  static const Color bottomNavigationItem = Color(0xFFE0E0E0); // Light Gray for text/icons
+  static const Color bottomNavigationSelected = Color(0xFFBB86FC);
   // Gradient Colors
   static const Gradient linearGradient = LinearGradient(
     begin: Alignment(0.0, 0.0),
     end: Alignment(0.707, -0.707),
     colors: [
-      Color(0xFFFFF9A9E),
+      Color(0xFFFF9A9E),
       Color(0xFFFAD0C4),
       Color(0xFFFAD0C4),
     ],
@@ -38,6 +44,6 @@ class AppColors {
   // Utility Colors
   static const Color success = Color(0xFF4CAF50); // Green for success messages
   static const Color warning = Color(0xFFFFA726); // Orange for warnings
-  static const Color error = Color(0xFFF44336); // Red for error messages
+
   static const Color info = Color(0xFF29B6F6); // Blue for informational messages
 }

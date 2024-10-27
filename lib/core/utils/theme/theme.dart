@@ -15,8 +15,8 @@ class AppTheme {
       // fontFamily: 'Poppins'
       brightness: Brightness.light,
       primaryColor: AppColors.primary,
-      scaffoldBackgroundColor: Colors.white,
-      textTheme: AppTextTheme.lightTextTheme,
+      scaffoldBackgroundColor: AppColors.scaffold,
+      // textTheme: AppTextTheme.lightTextTheme,
       elevatedButtonTheme: AppElevatedButtonTheme.lightElevatedButtonTheme,
       appBarTheme: App_BarTheme.lightAppBarTheme,
       inputDecorationTheme: AppTextFormFieldTheme.lightInputDecorationTheme);
