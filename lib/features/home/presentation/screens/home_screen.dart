@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:vpn/core/common/styles/global_text_style.dart';
 import 'package:vpn/core/utils/constants/colors.dart';
 import 'package:vpn/features/home/presentation/widgets/custom_round_widget.dart';
 
@@ -57,6 +58,7 @@ class HomeScreen extends StatelessWidget {
               )
             ],
           ),
+          vpnRoundButton(),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -90,6 +92,51 @@ class HomeScreen extends StatelessWidget {
           )
         ],
       ),
+    );
+  }
+
+  Widget vpnRoundButton() {
+    return Column(
+      children: [
+        Semantics(
+          button: true,
+          child: InkWell(
+            onTap: () {},
+            borderRadius: BorderRadius.circular(100.r),
+            child: Container(
+              padding: const EdgeInsets.all(18),
+              decoration: const BoxDecoration(
+                  shape: BoxShape.circle, color: Colors.red),
+              child: Container(
+                padding: const EdgeInsets.all(18),
+                decoration: const BoxDecoration(
+                    shape: BoxShape.circle, color: Colors.red),
+                child: Container(
+                  height: 70.h,
+                  width: 60.w,
+                  decoration: const BoxDecoration(
+                      shape: BoxShape.circle, color: Colors.red),
+                  child: Column(
+                    children: [
+                      Icon(
+                        Icons.power_settings_new,
+                        size: 30.sp,
+                        color: Colors.white,
+                      ),
+                      SizedBox(
+                        height: 6.h,
+                      ),
+                      Text('Tap to Connect',
+                          style: getTextStyle(
+                              color: Colors.white, fontWeight: FontWeight.w600))
+                    ],
+                  ),
+                ),
+              ),
+            ),
+          ),
+        ),
+      ],
     );
   }
 }
