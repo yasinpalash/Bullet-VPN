@@ -3,7 +3,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:vpn/core/common/styles/global_text_style.dart';
 import 'package:vpn/core/utils/constants/colors.dart';
 import 'package:vpn/features/home/presentation/widgets/custom_round_widget.dart';
-
 import '../widgets/navBar.dart';
 
 class HomeScreen extends StatelessWidget {
